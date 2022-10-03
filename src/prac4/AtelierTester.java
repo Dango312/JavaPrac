@@ -3,7 +3,7 @@ package prac4;
 public class AtelierTester {
     public static void main(String[] args) {
         Cloth[] cloths = new Cloth[4];
-        cloths[0] = new Tshirt(Sizes.M, 43.5, "Red");
+        cloths[0] = new TShirt(Sizes.M, 43.5, "Red");
         cloths[1] = new Pants(Sizes.L, 62.5, "Blue");
         cloths[2] = new Skirt(Sizes.XS, 50.5, "Black");
         cloths[3] = new Tie(Sizes.S, 10.0, "Green");
@@ -59,8 +59,8 @@ abstract class Cloth{
     protected double price;
     protected String color;
 }
-class Tshirt extends Cloth implements MenClothing,WomenClothing{
-    public Tshirt(Sizes size, double price, String color){
+class TShirt extends Cloth implements MenClothing,WomenClothing{
+    public TShirt(Sizes size, double price, String color){
         this.size = size;
         this.price = price;
         this.color = color;
