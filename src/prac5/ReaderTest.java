@@ -36,6 +36,25 @@ class Reader{
         System.out.println(FIO + " взял книги: " + m);
     }
 
+
+    public void returnBook(int n){
+        System.out.println(FIO + " вернул " + n + " книг");
+    }
+    public void retunrBook(String...books){
+        String m = "";
+        for(String book: books){
+            m += (book + ", ");
+        }
+        System.out.println(FIO + " вернул книги книги:" + m);
+    }
+    public void returnBook(Book...books){
+        String m = "";
+        for(Book book: books){
+            m += (book + ", ");
+        }
+        System.out.println(FIO + " вернул книги: " + m);
+    }
+
     @Override
     public String toString() {
         return "Reader{" +
