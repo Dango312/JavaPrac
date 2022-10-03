@@ -2,7 +2,9 @@ package prac5;
 
 public class ReaderTest {
     public static void main(String[] args){
-
+        Reader r1 = new Reader("Ivanov Ivan Ivanovich", "biology", "15.03.2002", "88346982513", 1325);
+        r1.takeBook("Anatomy", "Genetic");
+        r1.returnBook("Anatomy");
     }
 }
 
@@ -26,7 +28,7 @@ class Reader{
         for(String book: books){
             m += (book + ", ");
         }
-        System.out.println(FIO + " взял книги:" + m);
+        System.out.println(FIO + " взял книги: " + m);
     }
     public void takeBook(Book...books){
         String m = "";
@@ -40,12 +42,12 @@ class Reader{
     public void returnBook(int n){
         System.out.println(FIO + " вернул " + n + " книг");
     }
-    public void retunrBook(String...books){
+    public void returnBook(String...books){
         String m = "";
         for(String book: books){
             m += (book + ", ");
         }
-        System.out.println(FIO + " вернул книги книги:" + m);
+        System.out.println(FIO + " вернул книги книги: " + m);
     }
     public void returnBook(Book...books){
         String m = "";
