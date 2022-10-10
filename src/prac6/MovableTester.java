@@ -93,7 +93,6 @@ class MovableCircle extends MovablePoint{
                 '}';
     }
 }
-
 class MovableRectangle extends MovablePoint{
     MovablePoint topLeft, bottomRight;
 

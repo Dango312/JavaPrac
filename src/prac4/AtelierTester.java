@@ -3,31 +3,33 @@ package prac4;
 public class AtelierTester {
     public static void main(String[] args) {
         Cloth[] cloths = new Cloth[4];
-        cloths[0] = new TShirt(Sizes.M, 43.5, "Red");
-        cloths[1] = new Pants(Sizes.L, 62.5, "Blue");
-        cloths[2] = new Skirt(Sizes.XS, 50.5, "Black");
-        cloths[3] = new Tie(Sizes.S, 10.0, "Green");
-        Atelier.dressWoman((WomenClothing[]) cloths);
-        Atelier.dressMan((MenClothing[]) cloths);
+        cloths[0] = new TShirt(Sizes.M,30.8 , "Green");
+        cloths[1] = new Pants(Sizes.XS, 32.8, "Back");
+        cloths[2] = new Skirt(Sizes.XS, 40.7, "Black");
+        cloths[3] = new Tie(Sizes.L, 11.99, "Blue");
+        Atelier.dressWoman(cloths);
+        Atelier.dressMan(cloths);
     }
 }
 abstract class Atelier {
-    public static void dressWoman(WomenClothing[] cloths){
+    public static void dressWoman(Cloth[] cloths){
         for(int i =0; i < cloths.length; i++){
             Class[] interfaces = cloths[i].getClass().getInterfaces();
             for(Class c : interfaces){
                 if("WomenClothing".equals(c.getSimpleName())){
-                    System.out.println(cloths[i].dressWoman());
+                    WomenClothing cont = (WomenClothing) cloths[i];
+                    System.out.println(cont.dressWoman());
                 }
             }
         }
     }
-    public static void dressMan(MenClothing[] cloths){
+    public static void dressMan(Cloth[] cloths){
         for(int i =0; i < cloths.length; i++){
             Class[] interfaces = cloths[i].getClass().getInterfaces();
             for(Class c : interfaces){
                 if("MenClothing".equals(c.getSimpleName())){
-                    System.out.println(cloths[i].dressMan());
+                    MenClothing cont = (MenClothing) cloths[i];
+                    System.out.println(cont.dressMan());
                 }
             }
         }
