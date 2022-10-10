@@ -1,4 +1,4 @@
-package ex1;
+package prac1;
 import java.util.Scanner;
 
 public class Example {

@@ -1,4 +1,4 @@
-package prac6;
+package prac5;
 import javax.swing.*;
 import java.awt.*;
 import java.util.Random;
