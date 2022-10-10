@@ -1,6 +1,4 @@
-package prac5;
-
-import javax.swing.*;
+package prac4_1;
 
 public class PhoneTester {
     public static void main(String[] args){

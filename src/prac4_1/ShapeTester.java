@@ -1,4 +1,4 @@
-package prac5;
+package prac4_1;
 
 public class ShapeTester {
     public static void main(String[] args){

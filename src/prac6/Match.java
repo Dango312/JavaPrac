@@ -7,7 +7,7 @@ import java.awt.event.*;
 public class Match {
     int MilanScore, MadridScore;
     String lastScorer;
-    private JFrame mainFrame;
+    JFrame mainFrame;
     JLabel resultLabel;
     JLabel lastScorerLabel;
     JLabel winnerLabel;
