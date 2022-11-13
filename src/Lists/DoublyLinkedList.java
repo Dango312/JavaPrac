@@ -13,8 +13,6 @@ public class DoublyLinkedList {
         }
 
         newNode.prev = null;
-
-
     }
 
     void search_elem(String name){
@@ -42,7 +40,6 @@ public class DoublyLinkedList {
                 t = t.next;
             }
         }
-
     }
 
     public void printLinkedList() {
@@ -50,11 +47,11 @@ public class DoublyLinkedList {
         while (current != null) {
             current.displayNodeData();
             current = current.next;
-
         }
-        System.out.print("NULL");
-
+        System.out.print("NULL\n");
     }
+
+
 
     void is_empty(){
         if(head == null){        //если список пуст -

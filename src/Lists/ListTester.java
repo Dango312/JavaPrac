@@ -1,6 +1,8 @@
+/*
+Задание на списки №1
+ */
 
 package Lists;
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class ListTester {
