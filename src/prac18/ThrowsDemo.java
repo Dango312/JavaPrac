@@ -8,7 +8,7 @@ public class ThrowsDemo {
         while (true){
             try {
                 System.out.println("Enter line:");
-                String key = myScanner.nextLine();
+                String key = myScanner.next();
                 printDetails(key);
             }
             catch (RuntimeException e){
@@ -21,7 +21,7 @@ public class ThrowsDemo {
         System.out.println(message);
     }
     private String getDetails(String key) {
-        if(key == null) {
+        if(key == "") {
             throw new RuntimeException ( "Key set to empty string" );
         }
         return "data for " + key; }
