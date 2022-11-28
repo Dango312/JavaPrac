@@ -1,4 +1,4 @@
-package Factory;
+package prac24;
 
 public class FactoryTester {
     public static void main(String[] args) {

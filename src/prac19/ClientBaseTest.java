@@ -6,7 +6,7 @@ public class ClientBaseTest{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         UI ui = new UI(sc);
-        ui.controllIn();
+        ui.controlIn();
     }
 }
 
@@ -29,8 +29,9 @@ class UI {
     public UI(Scanner sc){
         this.scanner = sc;
     }
-    public void controllIn(){
+    public void controlIn(){
         while (true){
+            System.out.println("Enter command: ");
             String command = this.scanner.nextLine();
             if(command.equalsIgnoreCase("register")){
                 System.out.println("Enter FIO: ");

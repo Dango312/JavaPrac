@@ -1,4 +1,4 @@
-package Factory;
+package prac24;
 
 public class ChairFactory implements AbstractChairFactory {
     public VictorianChair createVictorianChair(int age){

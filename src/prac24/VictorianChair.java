@@ -1,4 +1,4 @@
-package Factory;
+package prac24;
 
 public class VictorianChair implements Chair{
     private int age;
