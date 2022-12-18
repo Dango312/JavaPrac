@@ -18,7 +18,6 @@ public class DoublyLinkedList {
         listLen++;
     }
     public void add(int data, int index){
-
         Node newNode = new Node();
         newNode.data = data;
         Node current = head;
