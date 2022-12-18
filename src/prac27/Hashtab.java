@@ -13,14 +13,11 @@ public class Hashtab<K> {
         elements[index] = value;
         len++;
     }
-
     public void print(){
         for(int i =0; i< len; i++){
             System.out.println(elements[i]);
         }
     }
-
-
     private void extend(){
         this.bucket *= 2;
         String[] newElements = new String[bucket];
@@ -29,7 +26,10 @@ public class Hashtab<K> {
         }
         elements = newElements;
     }
-
+    public String getElement(K key){
+        int index = (key.hashCode()) & (bucket-1);
+        return elements[index];
+    }
     public boolean is_filled(){
         if (len == bucket) {
             return true;

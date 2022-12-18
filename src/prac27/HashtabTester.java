@@ -7,5 +7,6 @@ public class HashtabTester {
         tab.add(321, "Toyota");
         tab.add(123, "Pivo");
         tab.print();
+        System.out.println(tab.getElement(12));
     }
 }
