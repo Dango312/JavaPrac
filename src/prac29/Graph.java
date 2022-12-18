@@ -7,7 +7,7 @@ public class Graph {
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(sc.nextLine());
         int[][] graph = new int[n][n];
-        int roadsCount = 0;
+        int roads = 0;
         for(int i = 0; i < n; i++){
             String[] strGraph = sc.nextLine().split(" ");
             for(int j = 0; j<strGraph.length; j++){
@@ -18,11 +18,11 @@ public class Graph {
         for(int i = 0; i < n; i++){
             for(int j = i+1; j<n;j++){
                 if(graph[i][j] != 0){
-                    roadsCount++;
+                    roads++;
                 }
             }
         }
-        System.out.println(roadsCount);
+        System.out.println(roads);
 
     }
 }
