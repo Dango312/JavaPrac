@@ -1,12 +1,20 @@
 package prac27;
 
+import java.util.Random;
+
 public class HashtabTester {
     public static void main(String[] args){
-        Hashtab<Integer> tab = new Hashtab<Integer>();
-        tab.add(12, "Kuzin");
-        tab.add(321, "Toyota");
-        tab.add(123, "Pivo");
-        tab.print();
-        System.out.println(tab.getElement(12));
+        Random rand = new Random();
+        Hashtab<String, Integer> hashtab = new Hashtab<>();
+        hashtab.hashtabAdd("Carrot", rand.nextInt(10));
+        hashtab.hashtabAdd("Pirate", rand.nextInt(10));
+        hashtab.hashtabAdd("Parrot", 7);
+        hashtab.hashtabAdd("Table", rand.nextInt(10));
+
+        hashtab.print();
+        hashtab.hashtabDelete("Table");
+        hashtab.print();
+        System.out.println(hashtab.get_element("Parrot"));
+        hashtab.clear();
     }
 }
